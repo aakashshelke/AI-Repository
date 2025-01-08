@@ -1,0 +1,32 @@
+const frames = [
+  {
+    id: 1,
+    title: "AI in the Domain",
+    subTopics: [
+      { id: 101, name: "Domain", description: "With which domain is the course associated?" },
+      { id: 102, name: "Potential AI Use Cases", description: "What are potential use cases of using AI in the domain?." },
+      { id: 103, name: "Data in the Domain", description: "What type of data is most common in the domain? Is data in the domain abundant or scarce?" },
+      { id: 103, name: "Implications of using AI in the Domain", description: "What implications (ethical, legal, social) does the use of AI havein the domain / the use case?" },
+      { id: 103, name: "Additional Learning Resources", description: "What additional (external) material or resources could be used? What Open Educational Resources could be helpful?" }
+    ]
+  },
+  {
+    id: 2,
+    title: "Learning Environment",
+    subTopics: [
+      { id: 201, name: "Learners and their Interaction with AI", description: "What existing AI knowledge and skills do the learners have? What other related skills and knowledge do the learners have? What role in the AI interaction are learners supposed to take after completing the course?" },
+      { id: 202, name: "Instructors", description: "What AI-related skills and competencies do the instructors have?" },
+      { id: 203, name: "Internal Support", description: "What time and AI-related resources are available? What AI-related data is available for the course? What support does the institution or the network provide?" }
+    ]
+  },
+  {
+    id: 3,
+    title: "Course Implementation",
+    subTopics: [
+      { id: 201, name: "Learning Outcomes", description: "What are the relevant learning outcomes of the course?" },
+      { id: 202, name: "Assessment", description: "How will the learning outcomes be assessed?" },
+      { id: 203, name: "Learning Activities", description: "What learning activities will be included in the course? What didactical approach will be taken? " }
+    ]
+  },
+  // { id: 11, title: "Future of AI", description: "Exploring future trends in AI" },
+];
