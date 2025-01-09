@@ -77,7 +77,6 @@ function Test() {
       </div>
       <div className="row g-4">
         {frames.map((frame, index) => {
-          {/* const gradient = gradients[index % gradients.length]; */}
           return (
             <div
               key={frame.id}

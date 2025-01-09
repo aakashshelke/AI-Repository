@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import Button from 'react-bootstrap/Button';
 import { initializeApp } from "firebase/app";
-import FormPage from './FormPage';
 import { useNavigate } from "react-router-dom";
 
 
@@ -14,12 +13,12 @@ import {
 
 // Firebase Configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCYqBPaPy6aa61WMaApMrDBd7_-0rWO9kU",
-  authDomain: "ai-repo-33b28.firebaseapp.com",
-  projectId: "ai-repo-33b28",
-  storageBucket: "ai-repo-33b28.firebasestorage.app",
-  messagingSenderId: "908992487754",
-  appId: "1:908992487754:web:bc110fcc7b96125b27a1b3",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
 };
 
 // Initialize Firebase
@@ -59,7 +58,7 @@ export default function HomePage() {
   const navigate = useNavigate();
 
   const handleNavigate = () => {
-    navigate("/test"); // Navigate to the FormPage
+    navigate("/form"); // Navigate to the FormPage
   };
 
   useEffect(() => {
